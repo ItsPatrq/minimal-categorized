@@ -1,0 +1,112 @@
+.menu {
+    $root: &;
+    background-image: linear-gradient(142deg, $p_dark 0%, $primary 45%, $p_dark 90%);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    float: left;
+    width: $menu-size;
+    box-sizing: border-box;
+    border-right: 2px solid $p_dark;
+    
+    @include mobile {
+        flex-direction: row;
+        width: 100%;
+        height: $menu-size;
+    }
+    
+    &-top {
+        box-sizing: border-box;
+        height: 100%;
+        flex-grow: 1;
+    }
+
+    &-top {
+        padding-left: 3px;
+        padding-right: 3px;
+        @include mobile {
+            padding: 3px 10px 3px 10px;
+        }
+    }
+
+    ul {
+        @include mobile {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+        }
+        padding-left: 0px;
+        li {
+            display: flex;
+            height: 50px;
+            justify-content:center;
+            a {
+                align-items:center;
+                color: $p_text;
+                cursor: pointer;
+                display: flex;
+                font-weight: 400;
+                justify-content: center;
+                letter-spacing: 1px;
+                line-height: 28px;
+                :hover {
+                    text-decoration: underline;
+                    font-weight: 900;
+                    color: $p_lighter;
+
+                }
+                &.selected {
+                    color: $s_lighter;
+                    :hover {
+                        color: $primary;
+                    }
+                }
+                @include mobile {
+                    height: calc(#{$menu-size} - 10px);
+                    width: $menu-size;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    h2 {
+        color: darken($color: $s_text, $amount: 25);
+        font-weight: 400;
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    
+
+    &-contact {
+        @include mobile{
+            a {
+                margin-top: 8px;
+                height: calc(#{$menu-size} - 10px);
+                width: calc(#{$menu-size} - 10px);
+                font-size: 30px;
+            }
+        }
+        display:flex;
+        justify-content:center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        a {
+            color: $p_lighter;
+            cursor:pointer;
+            text-align:left;
+            text-size-adjust:100%;
+            user-select:none;
+            margin-left: 4px;
+            margin-right: 4px;
+            :hover {
+                color: $primary;
+            }
+        }
+    }
+}

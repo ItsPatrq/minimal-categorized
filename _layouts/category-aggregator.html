@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="content-container category-aggregator {{ page.category }}">
+    <h1>{{ page.title }}</h1>
+    {{content}}
+    <hr>
+    {% for post in site.posts %}
+        {% if post.category == page.category %}
+            <article>
+                <header>
+                    <h2>
+                        <a href="{{ post.permalink }}">
+                            <i class="fas fa-angle-right"></i>
+                            {{ post.title }}
+                        </a>
+                    </h2>
+                    <p class="article-date">{{ post.date | date: "%Y-%m-%d" }}</p>
+                </header>
+                <section>
+                    <p>
+                        {{ post.summary }}
+                    </p>
+                </section>
+                <hr>
+            </article>
+        {% endif %}
+    {% endfor %}
+</div>

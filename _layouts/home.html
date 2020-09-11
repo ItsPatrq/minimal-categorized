@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <script src="https://kit.fontawesome.com/79c31398dc.js" crossorigin="anonymous"></script>
+    <script>
+      {% include home.js %}
+    </script>
+  </head>
+  <body>
+    {% if site.data.menu.show_menu_on_category_select %}
+    {% include menu.html %}
+    <main class="content-layout">
+    {% else %}
+    <main class="content-layout no-menu">
+    {% endif %}
+        <div class="home">
+            {% for menu_item in site.data.menu.menu_pages %}
+                {% if menu_item.show_on_home %}
+                    <a href="{{ menu_item.url }}" class="category-container">
+                        <div class="category" style="background-image: url('{{ menu_item.image_url }}')"></div>
+                        <p>
+                            {{ menu_item.title }}
+                        </p>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+      </main>
+  </body>
+</html>
+

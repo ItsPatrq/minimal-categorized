@@ -1,0 +1,9 @@
+---
+---
+{% if site.data.menu.minimal_menu %}
+$menu-size: 50px;
+{% else %}
+$menu-size: 200px;
+{% endif %}
+
+@import "{{ site.theme }}";
