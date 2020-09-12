@@ -1,11 +1,12 @@
-# minimal-categorized
+# [minimal-categorized Jekyll theme](https://github.com/ItsMeaga1n/minimal-categorized/)
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
+[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.9-blue.svg)](https://jekyllrb.com/)
+[![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+minimal-categorized is a flexible Jekyll theme, designed for sites with content easily aggregated into categories. Demo is available [here](https://itsmeaga1n.github.io/minimal-categorized/).
 
-TODO: Delete this and the text above, and describe your gem
-
+![layout examples](screenshot.png)
 
 ## Installation
 
@@ -31,11 +32,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+This theme is based on separating content into categories, which is later shown on separated sites designated to the specific content type.
+
+As for now, theme allows to use two main categories that will be displayed on home screen and more categories displayed only in menu to further separate content. Those are defined in `_data/menu.yml`.
+
+Structure of `_data/menu.yml`:
+TODO
+
+Structure of `_data/metaData.yml`:
+TODO
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on [GitHub](https://github.com/ItsMeaga1n/minimal-categorized). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

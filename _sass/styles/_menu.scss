@@ -33,7 +33,9 @@
             padding: 3px 10px 3px 10px;
         }
     }
-
+    h1 {
+        font-size: 2.5em;
+    }
     ul {
         @include mobile {
             display: flex;
@@ -54,7 +56,7 @@
                 justify-content: center;
                 letter-spacing: 1px;
                 line-height: 28px;
-                :hover {
+                &:hover {
                     text-decoration: underline;
                     font-weight: 900;
                     color: $p_lighter;
@@ -62,14 +64,15 @@
                 }
                 &.selected {
                     color: $s_lighter;
-                    :hover {
-                        color: $primary;
-                    }
                 }
                 @include mobile {
                     height: calc(#{$menu-size} - 10px);
                     width: $menu-size;
                     font-size: 30px;
+                }
+
+                i {
+                    margin-right: 5px;
                 }
             }
         }
@@ -104,8 +107,20 @@
             user-select:none;
             margin-left: 4px;
             margin-right: 4px;
-            :hover {
-                color: $primary;
+            &:hover {
+                color: $p_lightest;
+            }
+        }
+    }
+
+    &.minimal {
+        ul {
+            li {
+                a {
+                    i {
+                        margin: 0;
+                    }
+                }
             }
         }
     }

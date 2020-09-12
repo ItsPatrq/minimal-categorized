@@ -2,29 +2,32 @@ menu_title: Example menu title
 menu_headline: example menu headline
 menu_intro: Hi! This is an example of intro that you could write for your jekyll minimal-categorized theme!
 show_menu_on_category_select: False
-minimal_menu: False
-menu_logo: assets/img/logo.jpg
+minimal_menu: True
+menu_logo: /assets/img/avatar.png
 
 menu_pages:
 - title: Category 1
   url: /category-1.html
   show_on_home: True
-  image_url:
-  icon_name: fas fa-cogs
+  image_url: https://cataas.com/cat/1
+  icon_name: fas fa-dice
   category: category-1
+  tooltip: This is category 1
 
 - title: Category 2
   url: /category-2.html
   show_on_home: True
-  image_url:
+  image_url: https://cataas.com/cat/2
   icon_name: fas fa-cogs
   category: category-2
+  tooltip: This is category 2
 
 - title: ABOUT
   url: /about.html
   show_on_home: False
   icon_name: fas fa-address-card
   category: about
+  tooltip: This is about
 
 menu_contacts:
 - faicon: fab fa-github-alt

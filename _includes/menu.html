@@ -5,7 +5,7 @@
         <ul class="navigation">
             {% for menu_item in site.data.menu.menu_pages %}
             <li>
-                <a href="{{ menu_item.url }}" category="{{ menu_item.category }}">
+                <a href="{{ menu_item.url }}" category="{{ menu_item.category }}" title="{{ menu_item.tooltip }}">
                     <i class="{{ menu_item.icon_name }}"> </i>
                 </a>
             </li>
@@ -21,6 +21,7 @@
         {% endfor %}
     </div>
 </aside>
+
 {% else %}
 
 <aside class="menu">
@@ -39,8 +40,8 @@
         <ul class="navigation">
             {% for menu_item in site.data.menu.menu_pages %}
             <li>
-                <a href="{{ menu_item.url }}">
-                    <!-- <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"> </i>  -->
+                <a href="{{ menu_item.url }}" category="{{ menu_item.category }}" title="{{ menu_item.tooltip }}">
+                    <i class="{{ menu_item.icon_name }}"> </i>
                     <span>{{ menu_item.title }}</span>
                 </a>
             </li>

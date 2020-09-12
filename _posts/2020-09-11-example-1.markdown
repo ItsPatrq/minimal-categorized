@@ -1,10 +1,10 @@
 ---
-title: Category 2
-layout: category-aggregator
-permalink: /category-2.html
-category: category-2
+layout: post
+title: Exaample post 1
+permalink: /post-1
+category: category-1
+summary: This is summary of a post. It will appear in the page of it's category with the summary shown. Clicking each of them will redirect to the page of the post. 
 ---
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur turpis nec tortor sagittis, in tincidunt lectus iaculis. Sed tempor ligula ac nulla dictum, quis luctus tortor pretium. Suspendisse vitae nibh id sapien tempus posuere eu id ante. Fusce nec neque nisl. Suspendisse velit elit, euismod et lacus a, commodo mollis ligula. Duis non nibh gravida, interdum tellus sed, aliquam libero. Ut et tempor velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
 Maecenas egestas eu nulla sed facilisis. Phasellus suscipit varius nibh, nec pharetra velit dignissim vel. Proin eget sapien nec massa ornare ornare. Vestibulum mattis placerat sapien, vel cursus est pretium nec. Sed at est eget enim semper scelerisque. Proin massa massa, luctus vel ante nec, dignissim molestie leo. Nulla auctor et ligula nec mollis. Fusce lectus lorem, hendrerit et metus suscipit, molestie commodo eros.
