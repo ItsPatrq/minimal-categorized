@@ -2,7 +2,7 @@ menu_title: Example menu title
 menu_headline: example menu headline
 menu_intro: Hi! This is an example of intro that you could write for your jekyll minimal-categorized theme!
 show_menu_on_category_select: False
-minimal_menu: True
+minimal_menu: False
 menu_logo: /assets/img/avatar.png
 
 menu_pages:
