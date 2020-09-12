@@ -25,7 +25,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-theme: minimal-categorized
+remote_theme: ItsMeaga1n/minimal-categorized
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
