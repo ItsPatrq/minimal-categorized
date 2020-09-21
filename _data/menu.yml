@@ -7,7 +7,7 @@ menu_logo: /assets/img/avatar.png
 
 menu_pages:
 - title: Category 1
-  url: category-1.html
+  url: /category-1.html
   show_on_home: True
   image_url: https://cataas.com/cat/1
   icon_name: fas fa-dice
@@ -15,7 +15,7 @@ menu_pages:
   tooltip: This is category 1
 
 - title: Category 2
-  url: category-2.html
+  url: /category-2.html
   show_on_home: True
   image_url: https://cataas.com/cat/2
   icon_name: fas fa-cogs
