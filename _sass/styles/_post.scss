@@ -1,0 +1,27 @@
+.post {
+    a {
+        text-decoration-line: none;
+        color: $secondary;
+        &:hover {
+            text-decoration: underline;
+            font-weight: 500;
+        }
+    }
+    code {
+        &.language-plaintext {
+            border-radius: 3px;
+            padding: 1px 3px;
+            background-color:rgb(228, 230, 232);
+        }
+
+    }
+    figure {
+        margin: 0;
+        img {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+}
