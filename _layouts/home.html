@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="{{ '/assets/styles/styles.css' | relative_url }}">
     <script src="https://kit.fontawesome.com/79c31398dc.js" crossorigin="anonymous"></script>
     <script>
       {% include home.js %}
@@ -19,8 +19,8 @@
         <div class="home">
             {% for menu_item in site.data.menu.menu_pages %}
                 {% if menu_item.show_on_home %}
-                    <a href="{{ menu_item.url }}" class="category-container">
-                        <div class="category" style="background-image: url('{{ menu_item.image_url }}')"></div>
+                    <a href="{{ menu_item.url | relative_url }}" class="category-container">
+                        <div class="category" style="background-image: url('{{ menu_item.image_url | relative_url}}')"></div>
                         <p>
                             {{ menu_item.title }}
                         </p>
