@@ -37,10 +37,28 @@ This theme is based on separating content into categories, which is later shown 
 As for now, theme allows to use two main categories that will be displayed on home screen and more categories displayed only in menu to further separate content. Those are defined in `_data/menu.yml`.
 
 Structure of `_data/menu.yml`:
-TODO
+* menu_title: Displayed on menu (only for normal menu)
+* menu_headline: Displayed in menu (only for normal menu) and in about page
+* menu_intro: Displayed in menu (only for normal menu) and in about page
+* show_menu_on_category_select: Boolean value determining if menu should be visible on category selection page
+* minimal_menu: Boolean value determining the style of menu bar
+* menu_logo: Path to logo displayed on menu (only for normal menu)
+* menu_pages: a list of items in menu. Each item contains information:
+    * title: Menu position title
+    * url: URL for href
+    * show_on_home: Boolean value to determine if this position is a category to be shown on category picker
+    * image_url: image URL for category picker
+    * icon_name: FavIcon to be displayed in menu
+    * category: unique identifier of category. Used to determine which menu item is selected
+    * tooltip: Tooltip for menu item
+* menu_contacts: a list of items to be displayed for a contact section in menu
+    * faicon: FavIcon to be displayed in menu
+    * url: URL for href
+    * target: target value of \<a> tag
 
 Structure of `_data/metaData.yml`:
-TODO
+author: Site Author name
+avatar_url: URL for avatar (for about page)
 
 ## Contributing
 

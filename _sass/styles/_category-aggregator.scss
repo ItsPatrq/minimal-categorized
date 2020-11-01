@@ -2,6 +2,9 @@
     color: $p_dark;
     a {
         color: $secondary;
+        &:hover {
+            color: darken($secondary, 10%);
+        }
     }
     hr {
         border: 0;
@@ -16,8 +19,9 @@
             font-weight: 700;
             padding-left: 18px;
             font-style: italic;
-            margin-top: -0.7em;
+            margin-top: -0.8em;
             color: rgba(0, 0, 0, 0.4);
+            font-size: 0.9em;
         }
         .article-read {
             position: absolute;

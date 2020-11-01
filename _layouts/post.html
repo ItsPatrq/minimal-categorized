@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
     <figure>
-        <img src="{{ page.image }}"/>
+        <img src="{{ page.image | relative_url }}"/>
     </figure>
     <div class="content-container {{ page.category }}">
         <h1>{{ page.title }}</h1>

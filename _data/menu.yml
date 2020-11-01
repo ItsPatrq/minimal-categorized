@@ -9,7 +9,7 @@ menu_pages:
 - title: Category 1
   url: /category-1.html
   show_on_home: True
-  image_url: https://cataas.com/cat/1
+  image_url: assets/img/category-1.jpg
   icon_name: fas fa-dice
   category: category-1
   tooltip: This is category 1
@@ -17,7 +17,7 @@ menu_pages:
 - title: Category 2
   url: /category-2.html
   show_on_home: True
-  image_url: https://cataas.com/cat/2
+  image_url: assets/img/category-2.jpg
   icon_name: fas fa-cogs
   category: category-2
   tooltip: This is category 2

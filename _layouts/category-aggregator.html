@@ -11,7 +11,11 @@ layout: default
             <article>
                 <header>
                     <h2>
+                        {% if post.external_url %}
+                        <a href="{{ post.external_url | relative_url }}" target="_blank">
+                        {% else %}
                         <a href="{{ post.url | relative_url }}">
+                        {% endif %}
                             <i class="fas fa-angle-right"></i>
                             {{ post.title }}
                         </a>
@@ -24,8 +28,15 @@ layout: default
                     </p>
                 </section>
                 <span class="article-read">
+                    {% if post.external_url %}
+                    <a href="{{ post.external_url | relative_url }}" target="_blank">
+                    {% else %}
                     <a href="{{ post.url | relative_url }}">
-                        READ MORE &rarr;
+                    {% endif %}                        {% if post.external_name %}
+                        Read more on {{ post.external_name }} &rarr;
+                        {% else %}
+                        Read more &rarr;
+                        {% endif %}
                     </a>
                 </span>
                 <hr>
