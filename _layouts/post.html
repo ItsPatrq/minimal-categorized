@@ -2,9 +2,11 @@
 layout: default
 ---
 <div class="post">
+    {% if page.image %}
     <figure>
         <img src="{{ page.image | relative_url }}"/>
     </figure>
+    {% endif %}
     <div class="content-container {{ page.category }}">
         <h1>{{ page.title }}</h1>
         {{content}}
