@@ -33,9 +33,6 @@
             padding: 3px 10px 3px 10px;
         }
     }
-    h1 {
-        font-size: 2.5em;
-    }
     ul {
         @include mobile {
             display: flex;
@@ -57,7 +54,6 @@
                 letter-spacing: 1px;
                 line-height: 28px;
                 &:hover {
-                    text-decoration: underline;
                     font-weight: 900;
                     color: $p_lighter;
 
@@ -78,6 +74,11 @@
         }
     }
 
+    h1 {
+        font-size: 2em;
+        margin: 0.5em;
+    }
+
     h2 {
         color: darken($color: $s_text, $amount: 25);
         font-weight: 400;
@@ -87,18 +88,26 @@
     
 
     &-contact {
-        @include mobile{
-            a {
-                margin-top: 8px;
-                height: calc(#{$menu-size} - 10px);
-                width: calc(#{$menu-size} - 10px);
-                font-size: 30px;
-            }
-        }
         display:flex;
         justify-content:center;
         margin-bottom: 20px;
         flex-wrap: wrap;
+        @include mobile{
+            font-size: 16px;
+            max-height: $menu-size;
+            margin-bottom: 0;
+            display: inline-grid;
+            grid-template-rows: 50% 50%;
+            a:nth-child(odd) {
+                grid-row-start: 1;
+            }
+            a:nth-child(even) {
+                grid-row-start: 2;
+            }
+            a:nth-child(odd):last-child {
+                margin-top: 13px;
+            }
+        }
         a {
             color: $p_lighter;
             cursor:pointer;
@@ -112,13 +121,24 @@
             }
         }
     }
+}
 
-    &.minimal {
+.is-minimal-menu {
+    .menu {
+        width: $minimal-menu-size;
+        @include mobile {
+            height: $minimal-menu-size;
+            width: 100%;
+        }
         ul {
             li {
                 a {
                     i {
                         margin: 0;
+                    }
+                    @include mobile {
+                        height: calc(#{$minimal-menu-size} - 10px);
+                        width: $minimal-menu-size;
                     }
                 }
             }

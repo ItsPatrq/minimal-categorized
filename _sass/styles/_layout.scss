@@ -1,4 +1,3 @@
-
 main {
     background-color: $main-bg-color;
     color: black;
@@ -33,5 +32,17 @@ footer {
     font-size: 0.7em;
     p {
         margin: 0;
+    }
+}
+
+.is-minimal-menu {
+    main {
+        width: $content-width-desktop-minimal-menu;
+        left: $minimal-menu-size;
+        @include mobile {
+            top: $minimal-menu-size;
+            left: 0;
+            width: 100%;
+        }
     }
 }
