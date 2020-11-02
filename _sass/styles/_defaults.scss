@@ -9,9 +9,10 @@ h1 {
     margin: 1em 50px 1em;
 }
 
-h2 {
+h2, h2 a {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    line-height: 1.4em;
     color: $secondary;
 }
 

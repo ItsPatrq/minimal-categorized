@@ -6,7 +6,7 @@
       {% include home.js %}
     </script>
   </head>
-  {% if site.data.menu.minimal_menu %}
+  {% if site.data.menu.minimal_menu and site.data.menu.show_menu_on_category_select %}
   <body class="is-minimal-menu" >
   {% else %}
   <body>
