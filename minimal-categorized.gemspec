@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "minimal-categorized"
-  spec.version       = "0.0.8"
+  spec.version       = "0.0.9"
   spec.authors       = ["Patryk Bieszke"]
   spec.email         = ["bieszke.patryk@gmail.com"]
 
