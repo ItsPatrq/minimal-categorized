@@ -1,0 +1,70 @@
+.projects-collection {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .group {
+        border-radius: 6px;
+        margin: 4px;
+        display: inline-block;
+        border: 2px solid $p_dark;
+        border-width: 5px 5px 5px 4px;
+        position: relative;
+        text-align: initial;
+        min-width: 300px;
+        max-width: 375px;
+        width: 100%;
+        background-color: $p_lightest;
+        height: fit-content;
+        .title {
+            color: $p_text;
+            background-color: $p_dark;
+            padding: 4px;
+            text-align: center;
+            line-height: 10px;
+        }
+        a {
+            padding: 18px 15px 18px 15px;
+            width: 100%;
+            display: flex;
+            cursor: pointer;
+            transition: background 0.2s ease-in-out 0s;
+            position: relative;
+            box-sizing: border-box;
+            border-bottom: 1px solid $p_dark;
+            color: $p_dark;
+            line-height: 1.2em;
+            &:hover {
+                background-image: linear-gradient(to right, $p_lighter,  $p_lightest);
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 4px;
+                    height: 100%;
+                    background-color: $p_dark;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    box-shadow: $primary 4px 0px 22px;
+                }
+            }
+            .icon {
+                min-width: 50px;
+            }
+            .content {
+                h4 {
+                    margin: 0px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    min-height: 30px;
+                    font-size: 1.1em;
+                }
+                .description {
+                    font-size: 0.75em;
+                    line-height: 1.1em;
+                }
+            }
+        }
+    }
+}
