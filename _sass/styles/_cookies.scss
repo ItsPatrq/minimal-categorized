@@ -1,8 +1,7 @@
 .cookie-container {
     position: fixed;
-    right: 0;
     padding: 20px 15px;
-    z-index: 100;
+    z-index: $pop-ups-z-1;
     background-image: radial-gradient(farthest-corner at 25% 0, $primary, $p_dark);
     box-shadow: 0 0 6px 0 $p_dark;
     text-align: center;
@@ -10,7 +9,7 @@
     -webkit-transition: opacity 800ms, visibility 800ms;
     transition: opacity 800ms, visibility 800ms;
     bottom: 30px;
-    left: 30px;
+    left: 40px;
     max-width: 300px;
     border-radius: 3px;
     border: 3px solid $p_dark;
@@ -25,15 +24,25 @@
         visibility: hidden;
     }
     button {
-        line-height: 1.5;
+        line-height: 1.4;
         font-weight: 700;
         font-family: Titillium Web,sans-serif;
         display: inline-block;
-        padding: 15px 30px;
+        padding: 10px 20px;
         background: $p_text;
         color: $primary;
         border: 3px solid $p_light;
         border-radius: 3px;
         text-decoration: none;
+    }
+    @include mobile {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 12px 10px;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
     }
 }
