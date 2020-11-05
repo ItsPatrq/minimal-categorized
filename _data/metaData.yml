@@ -1,2 +1,6 @@
 author: Site Author
 avatar_url: assets/img/avatar.png
+cookies:
+  enabled: True
+  message: This site might be using cookies! Customize your message or disable cookies in metaData.yml!
+  agreeButtonText: Agree

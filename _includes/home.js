@@ -27,5 +27,5 @@
         
         attachEvents(category1, category2);
         attachEvents(category2, category1);
-    })    
-})()
+    });
+})();

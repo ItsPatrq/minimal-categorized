@@ -6,7 +6,7 @@ h1 {
     text-align: center;
     font-size: 2.5em;
     letter-spacing: -1px;
-    margin: 1em 50px 1em;
+    padding: 1em 50px 1em;
 }
 
 h2, h2 a {
@@ -34,9 +34,13 @@ main {
         width: 90%;
         padding: 0px 18px 24px;
         flex-grow: 1;
+        position: relative;
 
         .content-separator {
             margin: $gap auto;
+            &:last-child {
+                margin: $gap auto 0 auto;
+            }
         }
     }
 }

@@ -1,6 +1,11 @@
 <!doctype html>
 <html>
   <head>
+    {% if site.data.metaData.cookies.enabled %}
+      <script>
+        {% include cookies.js %}
+      </script>
+    {% endif %}
     {% include common-head.html %}
   </head>
   {% if site.data.menu.minimal_menu %}

@@ -55,6 +55,10 @@ Structure of `_data/menu.yml`:
     * faicon: FavIcon to be displayed in menu
     * url: URL for href
     * target: target value of \<a> tag
+    * cookies: customize information about site cookies
+        * enabled: determine if should show cookies pop-up
+        * message: text on cookie pop-up
+        * agreeButtonText: text on agree button
 
 Structure of `_data/metaData.yml`:
 author: Site Author name
