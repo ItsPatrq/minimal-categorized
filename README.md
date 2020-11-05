@@ -2,7 +2,7 @@
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.9-blue.svg)](https://jekyllrb.com/)
-[![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
+[![Gem Version](https://badge.fury.io/rb/minimal-categorized.svg)](https://badge.fury.io/rb/minimal-categorized)
 
 minimal-categorized is a flexible Jekyll theme, designed for sites with content easily aggregated into categories. Demo is available [here](https://itsmeaga1n.github.io/minimal-categorized/).
 

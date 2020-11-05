@@ -26,14 +26,19 @@
     button {
         line-height: 1.4;
         font-weight: 700;
-        font-family: Titillium Web,sans-serif;
         display: inline-block;
         padding: 10px 20px;
-        background: $p_text;
-        color: $primary;
-        border: 3px solid $p_light;
+        background: $p_light;
+        color: $p_text;
+        border: none;
         border-radius: 3px;
         text-decoration: none;
+        cursor: pointer;
+        -webkit-transition: background 200ms;
+        transition: background 200ms;
+        &:hover {
+            background: $p_lighter_less;
+        }
     }
     @include mobile {
         bottom: 0;
