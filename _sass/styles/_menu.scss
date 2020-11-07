@@ -1,6 +1,6 @@
 .menu {
     $root: &;
-    background-image: linear-gradient(142deg, $p_dark 0%, $primary 45%, $p_dark 90%);
+    background-image: linear-gradient(142deg, $dark 0%, $p_darkest 45%, $dark 90%);
     position: fixed;
     left: 0;
     top: 0;
@@ -12,7 +12,7 @@
     float: left;
     width: $menu-size;
     box-sizing: border-box;
-    border-right: 2px solid $p_dark;
+    border-right: 2px solid $dark;
     
     @include mobile {
         flex-direction: row;
@@ -44,6 +44,8 @@
             display: flex;
             height: 50px;
             justify-content:center;
+            position: relative;
+
             a {
                 align-items:center;
                 color: $p_text;
@@ -59,7 +61,19 @@
 
                 }
                 &.selected {
-                    color: $s_lighter;
+                    color: $primary;
+
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 2px;
+                        height: 100%;
+                        background-color: $primary;
+                        position: absolute;
+                        left: -2px;
+                        top: 0px;
+                        box-shadow: $primary 4px 0px 22px;
+                    }
                 }
                 @include mobile {
                     height: calc(#{$menu-size} - 10px);
@@ -109,7 +123,7 @@
             }
         }
         a {
-            color: $p_lighter;
+            color: $p_text;
             cursor:pointer;
             text-align:left;
             text-size-adjust:100%;
@@ -117,7 +131,8 @@
             margin-left: 4px;
             margin-right: 4px;
             &:hover {
-                color: $p_lightest;
+                font-weight: 900;
+                color: $p_lighter;
             }
         }
     }

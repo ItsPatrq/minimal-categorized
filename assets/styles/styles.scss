@@ -1,4 +1,8 @@
 ---
 ---
-
+// {% if site.data.metaData.lightTheme %}
+// @import "./variables/light-theme";
+// {% else %}
+// @import "./variables/dark-theme";
+// {% endif %}
 @import "minimal-categorized";

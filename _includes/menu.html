@@ -1,62 +1,61 @@
 {% if site.data.menu.minimal_menu %}
-<aside class="menu">
-    <div class="menu-top">
+    <aside class="menu">
+        <div class="menu-top">
 
-        <ul class="navigation">
-            {% for menu_item in site.data.menu.menu_pages %}
-            <li>
-                <a href="{{ menu_item.url | relative_url }}" category="{{ menu_item.category }}" title="{{ menu_item.tooltip }}">
-                    <i class="{{ menu_item.icon_name }}"> </i>
+            <ul class="navigation">
+                {% for menu_item in site.data.menu.menu_pages %}
+                <li>
+                    <a href="{{ menu_item.url | relative_url }}" category="{{ menu_item.category }}" title="{{ menu_item.tooltip }}">
+                        <i class="{{ menu_item.icon_name }}"> </i>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="menu-contact">
+            {% for contact in site.data.menu.menu_contacts %}
+                <a href="{{ contact.url | relative_url }}" target="{{ contact.target }}">
+                    <i class="{{ contact.faicon }}"></i>
                 </a>
-            </li>
             {% endfor %}
-        </ul>
-    </div>
-    <div class="menu-contact">
-        {% for contact in site.data.menu.menu_contacts %}
-
-        <a href="{{ contact.url | relative_url }}" target="{{ contact.target }}">
-            <i class="{{ contact.faicon }}"></i>
-        </a>
-        {% endfor %}
-    </div>
-</aside>
+        </div>
+    </aside>
 
 {% else %}
 
-<aside class="menu">
-    <div class="menu-top">
-        <div class="profile">
-            <div class="avatar">
-                <a href="{{ '/about.html' | relative_url }}" alt="avatar">
-                    <img src="{{ site.data.menu.menu_logo | relative_url }}" alt="avatar" onerror="this.style.display='none'">
-                </a>
+    <aside class="menu">
+        <div class="menu-top">
+            <div class="profile">
+                <div class="avatar">
+                    <a href="{{ '/about.html' | relative_url }}" alt="avatar">
+                        <img src="{{ site.data.menu.menu_logo | relative_url }}" alt="avatar" onerror="this.style.display='none'">
+                    </a>
+                </div>
+                <h1>{{ site.data.menu.menu_title }}</h1>
+                <h2>{{ site.data.menu.menu_headline }}</h2>
+                <p>{{ site.data.menu.menu_intro }}</p>
             </div>
-            <h1>{{ site.data.menu.menu_title }}</h1>
-            <h2>{{ site.data.menu.menu_headline }}</h2>
-            <p>{{ site.data.menu.menu_intro }}</p>
+
+            <ul class="navigation">
+                {% for menu_item in site.data.menu.menu_pages %}
+                <li>
+                    <a href="{{ menu_item.url | relative_url }}" category="{{ menu_item.category }}" title="{{ menu_item.tooltip }}">
+                        <i class="{{ menu_item.icon_name }}"> </i>
+                        <span>{{ menu_item.title }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
+        <div class="menu-contact">
+            {% for contact in site.data.menu.menu_contacts %}
 
-        <ul class="navigation">
-            {% for menu_item in site.data.menu.menu_pages %}
-            <li>
-                <a href="{{ menu_item.url | relative_url }}" category="{{ menu_item.category }}" title="{{ menu_item.tooltip }}">
-                    <i class="{{ menu_item.icon_name }}"> </i>
-                    <span>{{ menu_item.title }}</span>
-                </a>
-            </li>
+            <a href="{{ contact.url | relative_url }}" target="{{ contact.target }}">
+                <i class="{{ contact.faicon }}"></i>
+            </a>
             {% endfor %}
-        </ul>
-    </div>
-    <div class="menu-contact">
-        {% for contact in site.data.menu.menu_contacts %}
-
-        <a href="{{ contact.url | relative_url }}" target="{{ contact.target }}">
-            <i class="{{ contact.faicon }}"></i>
-        </a>
-        {% endfor %}
-    </div>
-</aside>
+        </div>
+    </aside>
 {% endif %}
 
 <script>

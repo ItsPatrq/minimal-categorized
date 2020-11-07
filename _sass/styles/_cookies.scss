@@ -2,8 +2,8 @@
     position: fixed;
     padding: 20px 15px;
     z-index: $pop-ups-z-1;
-    background-image: radial-gradient(farthest-corner at 25% 0, $primary, $p_dark);
-    box-shadow: 0 0 6px 0 $p_dark;
+    background-image: radial-gradient(farthest-corner at 25% 0, $p_darkest, $dark);
+    box-shadow: 0 0 6px 0 $dark;
     text-align: center;
     opacity: 0.95;
     -webkit-transition: opacity 800ms, visibility 800ms;
@@ -12,7 +12,7 @@
     left: 40px;
     max-width: 300px;
     border-radius: 3px;
-    border: 3px solid $p_dark;
+    border: 3px solid $dark;
 
     p {
         color: $p_text;
@@ -28,16 +28,16 @@
         font-weight: 700;
         display: inline-block;
         padding: 10px 20px;
-        background: $p_light;
+        background-color: $p_dark;
         color: $p_text;
         border: none;
         border-radius: 3px;
         text-decoration: none;
         cursor: pointer;
-        -webkit-transition: background 200ms;
-        transition: background 200ms;
+        -webkit-transition: background-color 200ms;
+        transition: background-color 200ms;
         &:hover {
-            background: $p_lighter_less;
+            background-color: $primary;
         }
     }
     @include mobile {

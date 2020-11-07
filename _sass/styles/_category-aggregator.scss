@@ -1,16 +1,16 @@
 .category-aggregator {
-    color: $p_dark;
+    color: $p_text;
     a {
-        color: $secondary;
+        color: $p_text;
         &:hover {
-            color: darken($secondary, 10%);
+            color: $primary;
         }
     }
     hr {
         border: 0;
         height: 0;
         border-top: 1px solid rgba(0, 0, 0, 0.1);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid $p_text_dimmed;
         margin: $gap auto $gap * 0.5 auto;
     }
     article {
@@ -20,7 +20,7 @@
             padding-left: 18px;
             font-style: italic;
             margin-top: -0.6em;
-            color: rgba(0, 0, 0, 0.4);
+            color: $p_text_dimmed;
             font-size: 0.9em;
         }
         .article-read {

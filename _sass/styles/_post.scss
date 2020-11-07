@@ -38,4 +38,10 @@
     li {
         display: list-item;
     }
+
+    &-content {
+        background: $base-white;
+        padding: 2rem;
+        border-radius: 10px;
+    }
 }

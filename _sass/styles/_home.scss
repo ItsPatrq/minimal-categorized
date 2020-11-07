@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: $p_dark;
+    background-color: $main-bg-color;
     a {
         display: flex;
         flex: 0 50%;
@@ -47,7 +47,7 @@
             opacity: 0;
             position: absolute;
             text-align: center;
-            text-shadow: $p_dark 3px 3px 3px;
+            text-shadow: $dark 3px 3px 3px;
             @include mobile {
                 opacity: 1;
             }
