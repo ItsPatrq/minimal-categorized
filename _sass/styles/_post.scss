@@ -1,16 +1,7 @@
 .post {
     font-size: 1.2em;
     color: black;
-    a {
-        transition: all 300ms ease 0s;
-        cursor: pointer;
-        text-decoration-line: none;
-        text-decoration: underline $primary;
-        &:hover {
-            color: $primary;
-            font-weight: 500;
-        }
-    }
+    @include hyperlink-convention();
     .language-plaintext, .language-shell, .language-html {
         border-radius: 3px;
         padding: 1px 3px;
