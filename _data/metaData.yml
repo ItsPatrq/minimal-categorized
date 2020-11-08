@@ -1,6 +1,7 @@
 author: Site Author
 avatar_url: assets/img/avatar.png
-lightTheme: True
+lightTheme: False
+show_menu_logo_on_home_page: True
 cookies:
   enabled: True
   message: This site might be using cookies! Customize your message or disable cookies in metaData.yml!

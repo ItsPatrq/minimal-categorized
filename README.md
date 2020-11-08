@@ -40,7 +40,7 @@ Structure of `_data/menu.yml`:
 * menu_title: Displayed on menu (only for normal menu)
 * menu_headline: Displayed in menu (only for normal menu) and in about page
 * menu_intro: Displayed in menu (only for normal menu) and in about page
-* show_menu_on_category_select: Boolean value determining if menu should be visible on category selection page
+* show_menu_on_gate_page: Boolean value determining if menu should be visible on category selection page
 * minimal_menu: Boolean value determining the style of menu bar
 * menu_logo: Path to logo displayed on menu (only for normal menu)
 * menu_pages: a list of items in menu. Each item contains information:

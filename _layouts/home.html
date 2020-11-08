@@ -1,35 +1,35 @@
-<!doctype html>
-<html>
-  <head>
-    {% include common-head.html %}
-    <script>
-      {% include home.js %}
-    </script>
-  </head>
-  {% if site.data.menu.minimal_menu and site.data.menu.show_menu_on_category_select %}
-  <body class="is-minimal-menu" >
-  {% else %}
-  <body>
-  {% endif %}
-    {% if site.data.menu.show_menu_on_category_select %}
-    {% include menu.html %}
-    <main class="content-layout">
-    {% else %}
-    <main class="content-layout no-menu">
+---
+layout: default
+category: home
+---
+<div class="content-container home">
+    
+    <h1>
+        {% if site.data.metaData.show_menu_logo_on_home_page %}
+        {% include avatar.html %}
     {% endif %}
-        <div class="home">
-            {% for menu_item in site.data.menu.menu_pages %}
-                {% if menu_item.show_on_home %}
-                    <a href="{{ menu_item.url | relative_url }}" class="category-container">
-                        <div class="category" style="background-image: url('{{ menu_item.image_url | relative_url}}')"></div>
-                        <p>
-                            {{ menu_item.title }}
-                        </p>
+        {{ page.title }}
+    </h1>
+    <p class="page-summary">{{ page.summary }}</p>
+    <div class="category_wrapper">
+    {% for menu_item in site.data.menu.menu_pages %}
+        {% if menu_item.show_on_home %}
+            <div class="category_container">
+                <div class="category_image">
+                    <a href="{{ menu_item.url | relative_url }}">
+                        <img class="category" src="{{ menu_item.image_url | relative_url}}">
                     </a>
-                {% endif %}
-            {% endfor %}
-        </div>
-      </main>
-  </body>
-</html>
-
+                </div>
+                <div class="category_description">
+                    <a href="{{ menu_item.url | relative_url }}">
+                    <h2> {{ menu_item.title }} </h2>
+                    </a>
+                    <p>
+                        {{ menu_item.description }}
+                    </p>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+</div>

@@ -1,64 +1,115 @@
+$image-dim: 192px;
 
 .home {
-    flex-grow: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: $main-bg-color;
-    a {
+    color: $p_text;
+    .page-summary {
+        flex: 0;
+        width: 100%;
+        text-align: center;
+    }
+    h1 {
+        flex: 0;
+        margin: auto;
         display: flex;
-        flex: 0 50%;
-        height: 100%;
-        justify-content: center;
         align-items: center;
-        box-sizing: border-box;
-        border: 1px solid $base-white;
-        transition: .5s ease;
+    }
+    a {
         &:hover {
-            .category {
-                opacity: 0.25;
-            }
-            p {
-                opacity: 1;
-            }
+            text-decoration: underline $primary;
         }
-        
-        .category {
+    }
+    .category {
+        &_wrapper {
+            margin-top: 2em;
+            flex: 1;
+            width: 100%;
             display: flex;
-            flex: 0 100%;
-            opacity: 0.7;
-            height: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            transition: .5s ease;
-            backface-visibility: hidden;
             @include mobile {
-                opacity: 0.25;
+                flex-direction: column;
+                margin-top: 1em;
             }
         }
-
-        p {
-            color: $p_lightest;
-            font-size: 42px;
-            font-weight: 700;
+        &_container {
+            display: flex;
+            flex-direction: column;
+            flex: 0 50%;
+            height: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            box-sizing: border-box;
             transition: .5s ease;
-            opacity: 0;
-            position: absolute;
-            text-align: center;
-            text-shadow: $dark 3px 3px 3px;
+            padding-left: 2em;
+            padding-right: 2em;
             @include mobile {
-                opacity: 1;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 2em;
             }
+            &:first-of-type {
+                border-right: 1px solid $base-white;
+                @include mobile {
+                    padding-bottom: 2em;
+                    padding-top: 0;
+                    border-right: none;
+                    border-bottom: 1px solid $base-white;
+                }
+            }
+        }
+        &_image {
+            justify-content: center !important;
+            display: flex;
+            height: $image-dim * 2;
+            align-items: center;
+            @include mobile {
+                height: $image-dim * 1.1;
+            }
+            a {
+                display: block;
+                width: $image-dim;
+                height: $image-dim;
+                border-radius: 50%;
+                border: 2px solid $p_light;
+                overflow: hidden;
+                transition: .5s ease;
+                &:hover {
+                    height: $image-dim * 1.5;
+                    width: $image-dim * 1.5;
+                }
+            }
+            img {
+                height: $image-dim;
+                width: $image-dim;
+                object-fit: cover;
+                transition: .5s ease;
+                opacity: 0.8;
+                &:hover {
+                    height: $image-dim * 1.5;
+                    width: $image-dim * 1.5;
+                }
+            }
+        }
+        &_description {
+            text-align: center;
+
+        }
+        display: flex;
+        flex: 0 100%;
+        opacity: 0.7;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backface-visibility: hidden;
+        @include mobile {
+            opacity: 0.25;
         }
     }
 
-    @include mobile {
-        flex-direction: column;
-        a {
-            height: 50%;
-            width: 100%;
-        }
+    .avatar_container {
+        margin-right: 0.5em;
     }
 }

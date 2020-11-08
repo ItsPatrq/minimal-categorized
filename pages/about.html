@@ -6,11 +6,7 @@ category: about
 
 ---
 <div class="profile">
-    <div class="avatar">
-        <a href="about.html" alt="avatar">
-            <img src="{{ site.data.metaData.avatar_url }}" alt="avatar" onerror="this.style.display='none'"> 
-        </a>
-    </div>
+    {% include avatar.html %}
     <h2>{{ site.data.menu.menu_headline }}</h2>
     <p>{{ site.data.menu.menu_intro }}</p>
 </div>

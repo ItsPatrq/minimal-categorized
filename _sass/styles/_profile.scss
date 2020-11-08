@@ -3,24 +3,12 @@ $avatar-dim: 96px;
 .profile { 
     margin-top: 30px;
     text-align: center;
-    .avatar {
-        justify-content: center!important;
-        display: flex;
-        a {
-            display: block;
-            width: $avatar-dim;
-            height: $avatar-dim;
-            border-radius: 50%;
-            border: 2px solid $p_light;
-            overflow: hidden;
-        }
-        img {
-            height: $avatar-dim;
-            width: $avatar-dim;
-        }
-    }
     p {
         margin: 6px;
         line-height: 1.5em;
+    }
+    .avatar {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

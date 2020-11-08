@@ -1,0 +1,16 @@
+.avatar {
+    &_container {
+        justify-content: center!important;
+        display: flex;
+    }
+    display: block;
+    width: $avatar-dim;
+    height: $avatar-dim;
+    border-radius: 50%;
+    border: 2px solid $p_light;
+    overflow: hidden;
+    img {
+        height: $avatar-dim;
+        width: $avatar-dim;
+    }
+}

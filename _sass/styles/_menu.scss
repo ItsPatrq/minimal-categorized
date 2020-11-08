@@ -73,6 +73,12 @@
                         left: -2px;
                         top: 0px;
                         box-shadow: $primary 4px 0px 22px;
+                        @include mobile {
+                            height: 2px;
+                            width: 100%;
+                            top: -2px;
+                            left: 0;
+                        }
                     }
                 }
                 @include mobile {

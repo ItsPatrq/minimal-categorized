@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    {% include common-head.html %}
+    <script>
+      {% include gate.js %}
+    </script>
+  </head>
+  {% if site.data.menu.minimal_menu and site.data.menu.show_menu_on_gate_page %}
+  <body class="is-minimal-menu" >
+  {% else %}
+  <body>
+  {% endif %}
+    {% if site.data.menu.show_menu_on_gate_page %}
+    {% include menu.html %}
+    <main class="content-layout">
+    {% else %}
+    <main class="content-layout no-menu">
+    {% endif %}
+        <div class="gate">
+            {% for menu_item in site.data.menu.menu_pages %}
+                {% if menu_item.show_on_home %}
+                    <a href="{{ menu_item.url | relative_url }}" class="category-container">
+                        <div class="category" style="background-image: url('{{ menu_item.image_url | relative_url}}')"></div>
+                        <p>
+                            {{ menu_item.title }}
+                        </p>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+      </main>
+  </body>
+</html>
+
