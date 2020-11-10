@@ -63,7 +63,7 @@ $image-dim: 192px;
         &_image {
             justify-content: center !important;
             display: flex;
-            height: $image-dim * 2;
+            height: $image-dim * 1.4;
             align-items: center;
             @include mobile {
                 height: $image-dim * 1.1;
@@ -77,8 +77,8 @@ $image-dim: 192px;
                 overflow: hidden;
                 transition: .5s ease;
                 &:hover {
-                    height: $image-dim * 1.5;
-                    width: $image-dim * 1.5;
+                    height: $image-dim * 1.2;
+                    width: $image-dim * 1.2;
                 }
             }
             img {
@@ -86,10 +86,10 @@ $image-dim: 192px;
                 width: $image-dim;
                 object-fit: cover;
                 transition: .5s ease;
-                opacity: 0.8;
+                opacity: 0.85;
                 &:hover {
-                    height: $image-dim * 1.5;
-                    width: $image-dim * 1.5;
+                    height: $image-dim * 1.2;
+                    width: $image-dim * 1.2;
                 }
             }
         }
