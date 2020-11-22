@@ -25,7 +25,7 @@ h2, h2, h3 a {
 body {
     font-size: 16px;
     color: $base-white;
-    font-family: forma-djr-micro,Arial,sans-serif;
+    font-family: 'Jost',Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 main {
@@ -62,5 +62,10 @@ a, p, li {
     }
     h1 {
         font-size: 2em;
+    }
+    main {
+        .content-container {
+            width: 100%;
+        }
     }
 }

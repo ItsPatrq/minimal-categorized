@@ -1,17 +1,22 @@
 .post {
+    $root: &;
     font-size: 1.2em;
     color: black;
     @include hyperlink-convention();
-    .language-plaintext, .language-shell, .language-html {
-        border-radius: 3px;
-        padding: 1px 3px;
-        background-color:rgb(228, 230, 232);
+    @include mobile{
+        font-size: 1em;
     }
     figure {
         margin: 0;
         width: 100%;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
+        margin-left: -0.5em;
+        margin-right: -0.5em;
+        width: calc(100% + 1em);
+        & > pre {
+            overflow: auto;
+        }
         img {
             width: 100%;
             background-repeat: no-repeat;
@@ -37,7 +42,27 @@
 
     &-content {
         background: $base-white;
-        padding: 2rem;
+        padding: 0.2em 2rem 2rem 2rem;
         border-radius: 10px;
+        @include mobile {
+            padding: 0.2em 1.2rem 1.2rem 1.2rem;
+        }
+    }
+
+    header {
+        padding: 1em 0.5em 0.8em 0.5em;
+        h1 {
+            padding: 0;
+            line-height: 1em;
+        }
+        p {
+            margin: 0;
+            color: $p_text;
+
+            &#{$root}-metadata {
+                font-size: 0.7em;
+                text-align: center;
+            }
+        }
     }
 }
