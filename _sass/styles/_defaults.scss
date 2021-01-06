@@ -58,7 +58,7 @@ a, p, li {
 
 @include mobile {
     body {
-        font-size: 13px;
+        font-size: 15px;
     }
     h1 {
         font-size: 2em;
@@ -66,6 +66,7 @@ a, p, li {
     main {
         .content-container {
             width: 100%;
+            padding: 0px 9px 12px;
         }
     }
 }

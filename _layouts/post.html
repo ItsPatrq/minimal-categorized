@@ -6,8 +6,10 @@ layout: default
     <div class="content-container {{ page.category }}">
         <header>
             {% if page.image %}
+                <figure class="post-cover">
             <!-- TODO: Images for diffrent screen size -->
-                <img src="{{ page.image | relative_url }}"/>
+                    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}" class="post-cover_image" />
+                </figure>
             {% endif %}
             <h1>{{ page.title }}</h1>
             <p class="post-metadata">

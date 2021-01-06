@@ -17,11 +17,7 @@
         & > pre {
             overflow: auto;
         }
-        img {
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+
     }
     p, ul {
         margin-bottom: $gap * .5;
@@ -63,6 +59,19 @@
                 font-size: 0.7em;
                 text-align: center;
             }
+        }
+    }
+
+    &-cover {
+        &_image {
+            display: block;
+            max-width: 100%;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            max-height: 84vh;
+            margin: auto;
         }
     }
 }
