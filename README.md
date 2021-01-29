@@ -1,35 +1,53 @@
-# [minimal-categorized Jekyll theme](https://github.com/ItsMeaga1n/minimal-categorized/)
+<h1><a href="https://github.com/ItsMeaga1n/minimal-categorized/"><img src="https://raw.githubusercontent.com/ItsMeaga1n/minimal-categorized/master/assets/img/favicon.ico" height="21" alt="minimal-categorized logo" /> minimal-categorized Jekyll theme </h1></a>
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.9-blue.svg)](https://jekyllrb.com/)
 [![Gem Version](https://badge.fury.io/rb/minimal-categorized.svg)](https://badge.fury.io/rb/minimal-categorized)
+<a href="https://ko-fi.com/itsmeaga1n">
+  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
+    alt="Donate (Ko-fi)" />
+</a>
+<a href="https://jekyll-themes.com">
+    <img src="https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg" height="20" alt="Jekyll Themes Shield" />
+</a>
 
-minimal-categorized is a flexible Jekyll theme, designed for sites with content easily aggregated into categories. Demo is available [here](https://itsmeaga1n.github.io/minimal-categorized/).
+minimal-categorized is a flexible Jekyll theme, designed for sites with content easily aggregated into two categories. It's main focus is on separating two main categories, while maintaining minimal style and full customization. Demo is available [here](https://itsmeaga1n.github.io/minimal-categorized/).
 
 ![layout examples](screenshot.png)
 
 ## Installation
+There are three ways to install:
 
-Add this line to your Jekyll site's `Gemfile`:
+* As a ruby gem theme:
 
-```ruby
-gem "minimal-categorized"
-```
+    Add this line to your Jekyll site's `Gemfile`:
 
-And add this line to your Jekyll site's `_config.yml`:
+    ```ruby
+    gem "minimal-categorized"
+    ```
 
-```yaml
-theme: minimal-categorized
-```
+    And add this line to your Jekyll site's `_config.yml`:
 
-And then execute:
+    ```yaml
+    theme: minimal-categorized
+    ```
 
-    $ bundle
+    And then execute:
 
-Or install it yourself as:
+        $ bundle
 
-    $ gem install minimal-categorized
+    Or install it yourself as:
 
+        $ gem install minimal-categorized
+
+* As a remote theme (GitHub Pages compatible)
+    
+    In your Jekyll site's _config.yml remove other themes and add this entry:
+    ```
+    remote_theme: ItsMeaga1n/minimal-categorized
+    ```
+
+* Forking/directly copying all of the theme files into your project.
 ## Usage
 
 This theme is based on separating content into categories, which is later shown on separated sites designated to the specific content type.
@@ -55,15 +73,17 @@ Structure of `_data/menu.yml`:
     * faicon: FavIcon to be displayed in menu
     * url: URL for href
     * target: target value of \<a> tag
-    * cookies: customize information about site cookies
-        * enabled: determine if should show cookies pop-up
-        * message: text on cookie pop-up
-        * agreeButtonText: text on agree button
+
 
 Structure of `_data/metaData.yml`:
-author: Site Author name
-avatar_url: URL for avatar (for about page)
-
+* author: Site Author name
+* avatar_url: URL for avatar (for about page)
+* lightTheme: Will work in future releases
+* cookies: customize information about site cookies
+    * enabled: determine if should show cookies pop-up
+    * message: text on cookie pop-up
+    * agreeButtonText: text on agree button
+* show_menu_logo_on_home_page: boolean value determining, if should display logo from "menu_logo" entry in default home page layout
 ## Contributing
 
 Bug reports and pull requests are welcome on [GitHub](https://github.com/ItsMeaga1n/minimal-categorized). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
@@ -80,4 +100,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `minimal-
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
