@@ -1,9 +1,9 @@
-<h1><a href="https://github.com/ItsMeaga1n/minimal-categorized/"><img src="https://raw.githubusercontent.com/ItsMeaga1n/minimal-categorized/master/assets/img/favicon.ico" height="21" alt="minimal-categorized logo" /> minimal-categorized Jekyll theme </h1></a>
+<h1><a href="https://github.com/ItsPatrq/minimal-categorized/"><img src="https://raw.githubusercontent.com/ItsPatrq/minimal-categorized/master/assets/img/favicon.ico" height="21" alt="minimal-categorized logo" /> minimal-categorized Jekyll theme </h1></a>
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.9-blue.svg)](https://jekyllrb.com/)
 [![Gem Version](https://badge.fury.io/rb/minimal-categorized.svg)](https://badge.fury.io/rb/minimal-categorized)
-<a href="https://ko-fi.com/itsmeaga1n">
+<a href="https://ko-fi.com/itspatrq">
   <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
     alt="Donate (Ko-fi)" />
 </a>
@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg" height="20" alt="Jekyll Themes Shield" />
 </a>
 
-minimal-categorized is a flexible Jekyll theme, designed for sites with content easily aggregated into two categories. It's main focus is on separating two main categories, while maintaining minimal style and full customization. Demo is available [here](https://itsmeaga1n.github.io/minimal-categorized/).
+minimal-categorized is a flexible Jekyll theme, designed for sites with content easily aggregated into two categories. It's main focus is on separating two main categories, while maintaining minimal style and full customization. Demo is available [here](https://itspatrq.github.io/minimal-categorized/).
 
 ![layout examples](screenshot.png)
 
@@ -44,7 +44,7 @@ There are three ways to install:
     
     In your Jekyll site's _config.yml remove other themes and add this entry:
     ```
-    remote_theme: ItsMeaga1n/minimal-categorized
+    remote_theme: ItsPatrq/minimal-categorized
     ```
 
 * Forking/directly copying all of the theme files into your project.
@@ -86,7 +86,7 @@ Structure of `_data/metaData.yml`:
 * show_menu_logo_on_home_page: boolean value determining, if should display logo from "menu_logo" entry in default home page layout
 ## Contributing
 
-Bug reports and pull requests are welcome on [GitHub](https://github.com/ItsMeaga1n/minimal-categorized). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on [GitHub](https://github.com/ItsPatrq/minimal-categorized). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

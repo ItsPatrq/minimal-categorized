@@ -21,17 +21,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   named minimal-categorized. Its main feature is to aggregate posts into
   categories, witch are easily distinguishable
 baseurl: "/minimal-categorized" # the subpath of your site, e.g. /blog
-url: "https://itsmeaga1n.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-author: itsmeaga1n
+url: "https://itspatrq.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+author: itspatrq
 twitter:
-  username: itsmeaga1n
+  username: itspatrq
   card: summary
 plugins:
   - jekyll-seo-tag
 
 # Build settings
 markdown: kramdown
-remote_theme: ItsMeaga1n/minimal-categorized
+remote_theme: ItsPatrq/minimal-categorized
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
